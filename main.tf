@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-2"
+}
+
 module "shell_execute" {
   source  = "github.com/matti/terraform-shell-resource"
   command = "./scripts/setenv.sh"
